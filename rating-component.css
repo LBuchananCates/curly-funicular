@@ -3,18 +3,22 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Overpass", sans-serif;
   margin: 0;
   background-color: hsl(216, 12%, 8%);
 }
 
 .container-one {
-  display: flex;
+  display: flex; /* display none when submit button clicked */
   flex-direction: column;
-  border-radius: 13px;
+  border-radius: 15px;
   background-color: hsl(213, 19%, 18%);
-  padding: 20px;
+  padding: 25px;
   margin: 5%; /* or 10px??? */
+  width: 370px;
 }
 
 .container-one img {
@@ -26,6 +30,8 @@ body {
 
 h1 {
   color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 p {
@@ -62,15 +68,16 @@ p {
 }
 
 .container-two {
-  /* display: none; FOR JAVASCRIPT*/
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
-  border-radius: 13px;
+  border-radius: 15px;
   background-color: hsl(213, 19%, 18%);
-  padding: 20px;
+  padding: 25px;
   margin: 5%; /* or 10px??? */
   text-align: center;
   align-items: center;
+  width: 370px;
 }
 
 .container-two img {
@@ -88,4 +95,7 @@ p {
 }
 
 @media screen and (min-width: 1440px) {
+  .container-one {
+    border-radius: 25px;
+  }
 }
