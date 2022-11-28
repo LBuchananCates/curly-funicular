@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container-one {
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  margin: 5%; /* or 10px??? */
+}
+
+.container-one img {
+  width: 40px;
+  background-color: hsl(215, 12%, 27%);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  line-height: 25px;
+}
+
+.butt-nums {
+  justify-content: space-between;
+  display: flex;
+}
+
+.butt-nums button {
+  border-radius: 50%;
+  background-color: hsl(215, 12%, 27%); /*#373f46*/
+  padding: 18px 21px;
+  border: none;
+  color: hsl(217, 12%, 63%);
+}
+
+.butt-nums button:hover {
+  background-color: hsl(25, 97%, 53%);
+  /* when hovering, bg turns light gray and font white, when selected onclick, bg turns orange and font white JS*/
+}
+
+.submit-button {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 30px;
+  border: none;
+  color: white;
+  letter-spacing: 3px;
+  padding: 18px 50px;
+  margin: 15px 0;
+}
+
+.container-two {
+  /* display: none; FOR JAVASCRIPT*/
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  margin: 5%; /* or 10px??? */
+  text-align: center;
+  align-items: center;
+}
+
+.container-two img {
+  padding: inherit; /* not sure, might need to change */
+}
+
+.rating-selection {
+  background-color: hsl(215, 12%, 27%);
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+  padding: 9px 15px;
+}
+
+.thank-you {
+}
+
+@media screen and (min-width: 1440px) {
+}
