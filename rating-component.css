@@ -17,7 +17,7 @@ body {
   border-radius: 15px;
   background-color: hsl(213, 19%, 18%);
   padding: 25px;
-  margin: 5%; /* or 10px??? */
+  margin: 5%;
   width: 370px;
 }
 
@@ -46,23 +46,24 @@ p {
 
 .butt-nums button {
   border-radius: 50%;
-  background-color: hsl(215, 12%, 27%); /*#373f46*/
+  background-color: hsl(215, 12%, 27%);
   padding: 18px 21px;
   border: none;
   color: hsl(217, 12%, 63%);
   cursor: pointer;
+  transition: background-color 400ms ease-in-out;
 }
 
 .butt-nums button:hover {
   background-color: hsl(217, 12%, 63%);
-  /* when hovering, bg turns light gray and font white, when selected onclick, bg turns orange and font white JS*/
   color: white;
 }
 
-/* .selected-rating {
+/* when rating is selected apply these styles; LEAVE THIS ALONE */
+.orange {
   background-color: hsl(25, 97%, 53%);
   color: white;
-} */
+}
 
 .submit-button {
   background-color: hsl(25, 97%, 53%);
@@ -73,6 +74,7 @@ p {
   padding: 18px 50px;
   margin: 15px 0;
   cursor: pointer;
+  transition: background-color 400ms ease-in-out;
 }
 
 .submit-button:hover {
@@ -82,7 +84,7 @@ p {
 
 .container-two {
   display: none;
-  /* display: flex; */
+  /* display: flex when submit rating in JS */
   flex-direction: column;
   border-radius: 15px;
   background-color: hsl(213, 19%, 18%);
@@ -108,7 +110,4 @@ p {
 }
 
 @media screen and (min-width: 1440px) {
-  .container-one {
-    border-radius: 25px;
-  }
 }
