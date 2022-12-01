@@ -26,11 +26,11 @@
         appreciated to help us improve our offering!
       </p>
       <div class="butt-nums">
-        <button id="button-one" class="selected-rating">1</button>
-        <button id="button-two" class="selected-rating">2</button>
-        <button id="button-three" class="selected-rating">3</button>
-        <button id="button-four" class="selected-rating">4</button>
-        <button id="button-five" class="selected-rating">5</button>
+        <button class="selected-rating button-one">1</button>
+        <button class="selected-rating button-two">2</button>
+        <button class="selected-rating button-three">3</button>
+        <button class="selected-rating button-four">4</button>
+        <button class="selected-rating button-five">5</button>
       </div>
       <button class="submit-button">SUBMIT</button>
     </div>
@@ -40,7 +40,9 @@
         src="images/illustration-thank-you.svg"
         alt="phone with receipt coming out of screen"
       />
-      <div class="rating-selection">You selected ___ out of 5</div>
+      <div class="rating-selection">
+        You selected <span class="numRating"></span> out of 5
+      </div>
       <h1 class="heading-two">Thank you!</h1>
       <p class="thank-you">
         We appreciate you taking the time to give a rating. If you ever need

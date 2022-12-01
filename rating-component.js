@@ -1,23 +1,23 @@
-const submitButton = document.querySelector("submit-button");
+const containerOne = document.querySelector(".container-one");
+const containerTwo = document.querySelector(".container-two");
+const submitButton = document.querySelector(".submit-button");
+const thankyou = document.querySelector(".rating-selection");
+const ratingValues = document.getElementsByClassName("selected-rating");
 
-const buttonOne = document.querySelector("#button-one");
-const buttonTwo = document.querySelector("#button-two");
-const buttonThree = document.querySelector("#button-three");
-const buttonFour = document.querySelector("#button-four");
-const buttonFive = document.querySelector("#button-five");
+for (let i = 0; i < ratingValues.length; i++) {
+  const ratingValue = ratingValues[i];
 
-const showSelection = document.querySelector(".selected-rating");
+  ratingValue.addEventListener("click", function () {
+    thankyou.textContent = `You selected ${ratingValue.innerText} out of 5`;
+    // add orange background color when rating selected
+    ratingValue.style.backgroundColor = "orange";
+  });
 
-if (
-  (buttonOne.onclick = function () {
-    // turns selected button orange
-    buttonOne.classList.add("showSelection");
-  })
-);
-
-// 1. when hovering, bg turns light gray and font white, when selected onclick, bg turns orange and font white JS
-// 2. conatiner-two display none but display flex when onclick submit
-// 3. prevent default when selecting 1-5 rating
-// 4. prevent default if no rating selected
-// 5. when submit clicked, display none container-one, display flex container-two
-//
+  //submit clicked: containerOne hidden, containerTwo displayed
+  submitButton.addEventListener("click", function () {
+    // display-none added to rating box
+    containerOne.style.display = "none";
+    //display-none removed from message box
+    containerTwo.style.display = "flex";
+  });
+}
